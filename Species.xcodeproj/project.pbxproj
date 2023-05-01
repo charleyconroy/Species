@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A9C75E4929EF3661001995B4 /* SpeciesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E4829EF3661001995B4 /* SpeciesApp.swift */; };
-		A9C75E4B29EF3661001995B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E4A29EF3661001995B4 /* ContentView.swift */; };
+		A9C75E4B29EF3661001995B4 /* SpeciesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E4A29EF3661001995B4 /* SpeciesListView.swift */; };
 		A9C75E4D29EF3662001995B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C75E4C29EF3662001995B4 /* Assets.xcassets */; };
 		A9C75E5029EF3662001995B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C75E4F29EF3662001995B4 /* Preview Assets.xcassets */; };
+		A9C75E5829EF3849001995B4 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E5729EF3849001995B4 /* Species.swift */; };
+		A9C75E5A29EF3906001995B4 /* SpeciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E5929EF3906001995B4 /* SpeciesViewModel.swift */; };
+		A9C75E5C29EF45BE001995B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C75E5B29EF45BE001995B4 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9C75E4529EF3661001995B4 /* Species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Species.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C75E4829EF3661001995B4 /* SpeciesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesApp.swift; sourceTree = "<group>"; };
-		A9C75E4A29EF3661001995B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9C75E4A29EF3661001995B4 /* SpeciesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesListView.swift; sourceTree = "<group>"; };
 		A9C75E4C29EF3662001995B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C75E4F29EF3662001995B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9C75E5629EF36CC001995B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A9C75E5729EF3849001995B4 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		A9C75E5929EF3906001995B4 /* SpeciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesViewModel.swift; sourceTree = "<group>"; };
+		A9C75E5B29EF45BE001995B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		A9C75E4729EF3661001995B4 /* Species */ = {
 			isa = PBXGroup;
 			children = (
+				A9C75E5629EF36CC001995B4 /* Info.plist */,
 				A9C75E4829EF3661001995B4 /* SpeciesApp.swift */,
-				A9C75E4A29EF3661001995B4 /* ContentView.swift */,
+				A9C75E5729EF3849001995B4 /* Species.swift */,
+				A9C75E5929EF3906001995B4 /* SpeciesViewModel.swift */,
+				A9C75E4A29EF3661001995B4 /* SpeciesListView.swift */,
+				A9C75E5B29EF45BE001995B4 /* DetailView.swift */,
 				A9C75E4C29EF3662001995B4 /* Assets.xcassets */,
 				A9C75E4E29EF3662001995B4 /* Preview Content */,
 			);
@@ -137,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C75E4B29EF3661001995B4 /* ContentView.swift in Sources */,
+				A9C75E4B29EF3661001995B4 /* SpeciesListView.swift in Sources */,
+				A9C75E5A29EF3906001995B4 /* SpeciesViewModel.swift in Sources */,
+				A9C75E5829EF3849001995B4 /* Species.swift in Sources */,
+				A9C75E5C29EF45BE001995B4 /* DetailView.swift in Sources */,
 				A9C75E4929EF3661001995B4 /* SpeciesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +284,9 @@
 				DEVELOPMENT_TEAM = V9Q99LG67S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Species/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +313,9 @@
 				DEVELOPMENT_TEAM = V9Q99LG67S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Species/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
